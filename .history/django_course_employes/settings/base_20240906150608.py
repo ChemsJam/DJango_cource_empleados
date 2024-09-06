@@ -1,9 +1,7 @@
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-
-# .parent added to sett de BASE_DIR success full
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-9icph15ae&$$tt8-+!#u85)j15nffn-jy(q)0j79ybw8p!*ygx'
@@ -38,7 +36,6 @@ ROOT_URLCONF = 'django_course_employes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # BASE_DIR/templates added to use the templates folder
         'DIRS': [BASE_DIR/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {

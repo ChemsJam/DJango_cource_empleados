@@ -38,7 +38,6 @@ ROOT_URLCONF = 'django_course_employes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # BASE_DIR/templates added to use the templates folder
         'DIRS': [BASE_DIR/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {

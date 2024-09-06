@@ -10,12 +10,12 @@ ALLOWED_HOSTS = []
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_employes_course',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': 'Soyjohan123.'
+        'ENGINE': 'django.db.backends.msysql',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        'database': "django_employes_course",
+        'user': root,
+        'password: = "Soyjohan123.",
+        'default-character-set' = 'utf8',
     }
 }
 
