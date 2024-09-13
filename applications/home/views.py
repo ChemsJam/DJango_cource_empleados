@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView
-
+from .models import Prueba
 # Create your views here.
 
 class IndexView(TemplateView):
@@ -11,3 +11,8 @@ class PruebaListView(ListView):
     queryset = ['A', 'B', 'C']
     context_object_name = 'lista_prueba'
     
+
+class TestModelListView(ListView):
+    model = Prueba
+    template_name = "home/test.html"
+    context_object_name = 'test_list'
