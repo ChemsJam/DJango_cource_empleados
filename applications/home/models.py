@@ -7,4 +7,4 @@ class Prueba(models.Model):
     subtitulo = models.CharField(max_length = 250)
     
     def __str__(self):
-        return self.titulo + '-' + self.subtitulo
+        return str(self.id) + ' - ' + self.titulo + ' - ' + self.subtitulo
