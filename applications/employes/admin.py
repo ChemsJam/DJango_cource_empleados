@@ -25,6 +25,7 @@ class AdminEmploye(admin.ModelAdmin):
         )
     
     list_filter = (
+        'departmen',
         'job',
         'skills'
     )
